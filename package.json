@@ -1,0 +1,31 @@
+{
+  "name": "tech-news-hub",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @tech-news-hub/web dev",
+    "build": "yarn workspace @tech-news-hub/web build",
+    "start": "yarn workspace @tech-news-hub/web start",
+    "lint": "eslint .",
+    "typecheck": "yarn workspaces run typecheck",
+    "check": "yarn lint && yarn typecheck && yarn build"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@next/eslint-plugin-next": "16.3.8",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.12.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1"
+  }
+}

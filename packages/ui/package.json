@@ -1,0 +1,16 @@
+{
+  "name": "@tech-news-hub/ui",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "styled-components": "6.5.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0"
+  }
+}
